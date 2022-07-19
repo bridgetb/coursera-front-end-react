@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Navbar, NavbarBrand } from 'reactstrap';
-import logo from './logo.svg';
 import './App.css';
+import Menu from './components/MenuComponent';
 
+<Menu />
 class App extends Component {
   render() {
     return (

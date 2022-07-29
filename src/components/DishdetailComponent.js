@@ -40,11 +40,11 @@ class DishDetail extends Component {
             return (
                 <div><h4>Comments</h4>
                     <ul class="list-unstyled">
-                        {comments.map((obj) => {
+                        {comments.map((comment) => {
                             return (
                                 <div>
-                                    <li>{obj.comment}</li>
-                                    <li>-- {obj.author} , {obj.date}</li>
+                                    <li>{comment.comment}</li>
+                                    <li>-- {comment.author} , {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}</li>
                                 </div>
                             );
                         })}
